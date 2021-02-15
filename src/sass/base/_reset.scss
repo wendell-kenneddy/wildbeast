@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Vollkorn", Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+img {
+  border-radius: 0.325rem;
+  width: 100%;
+
+  display: block;
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) 3fr 300px;
+  grid-template-areas:
+    "header header header"
+    "sidenav content ads"
+    "footer footer footer"
+  ;
+}
+
+#page-header {
+  grid-area: header;
+}
+
+#sidenav {
+  grid-area: sidenav;
+}
+
+#page-content {
+  grid-area: content;
+}
+
+#ads {
+  grid-area: ads;
+}
+
+#page-footer {
+  grid-area: footer;
+}
